@@ -1,7 +1,1764 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<main>
+  <!-- seller area start -->
+  <section class="seller__area pt-115 pb-60">
+    <div class="container tp-container">
+      <div class="row">
+        <div class="col-xxl-9 col-lg-9 col-sm-7">
+          <div class="section__title-wrapper mb-40">
+            <h4 class="section__title-stroke">Populer</h4>
+            <span class="section__title-pre">Popular </span>
+            <h3 class="section__title section__title-blue">Sellers</h3>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-lg-3 col-sm-5">
+          <div class="seller__date ml-15">
+            <div class="seller__date-select">
+              <h3>Timeframe</h3>
+              <select>
+                <option>Today</option>
+                <option>Tommorow</option>
+                <option>Day before yesterday</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-trophy"></i> #1</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
 
-{% load static %}
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-1.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Robin Milford</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.74<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item clr-green theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-bolt"></i> #2</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
 
-{% block content %}
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-2.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Penny Tool</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.254<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item clr-orange theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-trophy"></i> #3</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
 
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-3.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Shahnewaz SP</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.20<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item clr-purple theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-trophy"></i> #4</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-4.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Joss Sticks</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.74<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item clr-yellow theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-trophy"></i> #5</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-5.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Ruüd van Driver</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.74<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6">
+          <div class="seller__item clr-pink theme-bg-dark mb-30 transition-3">
+            <div class="seller__top d-flex justify-content-between">
+              <div class="seller__rank">
+                <span><i class="fa-light fa-trophy"></i> #6</span>
+              </div>
+              <div class="seller__action">
+                <ul>
+                  <li>
+                    <a href="#" class="plus-minus">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <i class="fa-regular fa-square-minus"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seller__content text-center">
+              <div class="seller__thumb">
+                <a href="#">
+                  <img
+                    src="{% static 'assets/img/seller/seller-6.jpg' %}"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="seller__info">
+                <h3 class="seller__name">
+                  <a href="profile.html">Gordon Norman</a>
+                </h3>
+                <div
+                  class="seller__revenue d-flex align-items-center justify-content-center"
+                >
+                  <div class="seller__revenue-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                  </div>
+                  <div class="seller__revenue-ammount">
+                    <p>00.74<span>ETH</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- seller area end -->
+
+  <!-- bid area start -->
+  <section class="bid__area pt-60 pb-130 fix">
+    <div class="container tp-container">
+      <div class="row">
+        <div class="col-xxl-6 col-sm-6">
+          <div class="section__title-wrapper mb-40">
+            <h4 class="section__title-stroke">Hot bids</h4>
+            <h3 class="section__title">
+              Hot bids
+              <span
+                ><img src="{% static 'assets/img/icon/fire.png' %}" alt=""
+              /></span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-sm-6">
+          <div class="bid__nav text-sm-end"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="bid__slider bid__slider-active">
+            <div class="bid__item theme-bg-dark">
+              <div class="bid__item-wrapper">
+                <div
+                  class="bid__top d-flex align-items-center justify-content-between mb-20"
+                >
+                  <div class="bid__user">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bid__popularity">
+                    <a href="profile.html">
+                      <i class="icon_heart"></i>
+                      14.2k
+                    </a>
+                  </div>
+                </div>
+                <div class="bid__thumb m-img mb-20">
+                  <a href="product-details.html">
+                    <img
+                      src="{% static 'assets/img/bid/bid-img-13.jpg' %}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bid__content">
+                  <h3 class="bid__title">
+                    <a href="product-details.html">Aqua Watcher Genesis</a>
+                  </h3>
+                  <div
+                    class="bid__info d-flex align-items-center justify-content-between"
+                  >
+                    <div class="bid__highest">
+                      <p>Heights bid <span>0.074 ETH</span></p>
+                    </div>
+                    <div class="bid__stock">
+                      <p>6 in stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bid__bottom d-flex align-items-center justify-content-between"
+                >
+                  <div class="bid__btn-wrapper">
+                    <a
+                      href="product-details.html"
+                      class="bid__btn bid__btn-border"
+                      >Bid History</a
+                    >
+                  </div>
+                  <div class="bid__btn-wrapper">
+                    <button
+                      type="button"
+                      class="bid__btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bidmodal"
+                    >
+                      Place a bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bid__item theme-bg-dark">
+              <div class="bid__item-wrapper">
+                <div
+                  class="bid__top d-flex align-items-center justify-content-between mb-20"
+                >
+                  <div class="bid__user">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bid__popularity">
+                    <a href="profile.html">
+                      <i class="icon_heart"></i>
+                      12.5k
+                    </a>
+                  </div>
+                </div>
+                <div class="bid__thumb m-img mb-20">
+                  <a href="product-details.html">
+                    <img
+                      src="{% static 'assets/img/bid/bid-img-14.jpg' %}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bid__content">
+                  <h3 class="bid__title">
+                    <a href="product-details.html">Blockraptors 3D</a>
+                  </h3>
+                  <div
+                    class="bid__info d-flex align-items-center justify-content-between"
+                  >
+                    <div class="bid__highest">
+                      <p>Heights bid <span>0.074 ETH</span></p>
+                    </div>
+                    <div class="bid__stock">
+                      <p>6 in stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bid__bottom d-flex align-items-center justify-content-between"
+                >
+                  <div class="bid__btn-wrapper">
+                    <a
+                      href="product-details.html"
+                      class="bid__btn bid__btn-border"
+                      >Bid History</a
+                    >
+                  </div>
+                  <div class="bid__btn-wrapper">
+                    <button
+                      type="button"
+                      class="bid__btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bidmodal"
+                    >
+                      Place a bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bid__item theme-bg-dark">
+              <div class="bid__item-wrapper">
+                <div
+                  class="bid__top d-flex align-items-center justify-content-between mb-20"
+                >
+                  <div class="bid__user">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bid__popularity">
+                    <a href="product-details.html">
+                      <i class="icon_heart"></i>
+                      9.5k
+                    </a>
+                  </div>
+                </div>
+                <div class="bid__thumb m-img mb-20">
+                  <a href="product-details.html">
+                    <img
+                      src="{% static 'assets/img/bid/bid-img-15.jpg' %}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bid__content">
+                  <h3 class="bid__title">
+                    <a href="product-details.html">VZUS ambwe</a>
+                  </h3>
+                  <div
+                    class="bid__info d-flex align-items-center justify-content-between"
+                  >
+                    <div class="bid__highest">
+                      <p>Heights bid <span>0.074 ETH</span></p>
+                    </div>
+                    <div class="bid__stock">
+                      <p>6 in stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bid__bottom d-flex align-items-center justify-content-between"
+                >
+                  <div class="bid__btn-wrapper">
+                    <a
+                      href="product-details.html"
+                      class="bid__btn bid__btn-border"
+                      >Bid History</a
+                    >
+                  </div>
+                  <div class="bid__btn-wrapper">
+                    <button
+                      type="button"
+                      class="bid__btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bidmodal"
+                    >
+                      Place a bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bid__item theme-bg-dark">
+              <div class="bid__item-wrapper">
+                <div
+                  class="bid__top d-flex align-items-center justify-content-between mb-20"
+                >
+                  <div class="bid__user">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bid__popularity">
+                    <a href="profile.html">
+                      <i class="icon_heart"></i>
+                      22.2k
+                    </a>
+                  </div>
+                </div>
+                <div class="bid__thumb m-img mb-20">
+                  <a href="product-details.html">
+                    <img
+                      src="{% static 'assets/img/bid/bid-img-16.jpg' %}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bid__content">
+                  <h3 class="bid__title">
+                    <a href="product-details.html">Beach Moon Escape</a>
+                  </h3>
+                  <div
+                    class="bid__info d-flex align-items-center justify-content-between"
+                  >
+                    <div class="bid__highest">
+                      <p>Heights bid <span>0.074 ETH</span></p>
+                    </div>
+                    <div class="bid__stock">
+                      <p>6 in stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bid__bottom d-flex align-items-center justify-content-between"
+                >
+                  <div class="bid__btn-wrapper">
+                    <a
+                      href="product-details.html"
+                      class="bid__btn bid__btn-border"
+                      >Bid History</a
+                    >
+                  </div>
+                  <div class="bid__btn-wrapper">
+                    <button
+                      type="button"
+                      class="bid__btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bidmodal"
+                    >
+                      Place a bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bid__item theme-bg-dark">
+              <div class="bid__item-wrapper">
+                <div
+                  class="bid__top d-flex align-items-center justify-content-between mb-20"
+                >
+                  <div class="bid__user">
+                    <ul>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="profile.html">
+                          <img
+                            src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bid__popularity">
+                    <a href="profile.html">
+                      <i class="icon_heart"></i>
+                      22.2k
+                    </a>
+                  </div>
+                </div>
+                <div class="bid__thumb m-img mb-20">
+                  <a href="product-details.html">
+                    <img
+                      src="{% static 'assets/img/bid/bid-img-2.jpg' %}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="bid__content">
+                  <h3 class="bid__title">
+                    <a href="product-details.html">Beach Moon Escape</a>
+                  </h3>
+                  <div
+                    class="bid__info d-flex align-items-center justify-content-between"
+                  >
+                    <div class="bid__highest">
+                      <p>Heights bid <span>0.074 ETH</span></p>
+                    </div>
+                    <div class="bid__stock">
+                      <p>6 in stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bid__bottom d-flex align-items-center justify-content-between"
+                >
+                  <div class="bid__btn-wrapper">
+                    <a
+                      href="product-details.html"
+                      class="bid__btn bid__btn-border"
+                      >Bid History</a
+                    >
+                  </div>
+                  <div class="bid__btn-wrapper">
+                    <button
+                      type="button"
+                      class="bid__btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bidmodal"
+                    >
+                      Place a bid
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- bid area end -->
+
+  <!-- nft area start -->
+  <section class="nft__area nft__overlay pt-110">
+    <div class="container tp-container">
+      <div class="row">
+        <div class="col-xxl-9">
+          <div class="section__title-wrapper mb-40">
+            <h4 class="section__title-stroke">Explore</h4>
+            <h3 class="section__title">Explore NFTs</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-9 col-xl-10">
+          <div class="nft__nav mb-35">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-trending-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-trending"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-trending"
+                  aria-selected="true"
+                >
+                  <img
+                    src="{% static 'assets/img/icon/trending/fire.png' %}"
+                    alt=""
+                  />Trendings
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-art-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-art"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-art"
+                  aria-selected="false"
+                >
+                  <img src="{% static 'assets/img/icon/trending/color.png' %}" alt="" />Art
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-music-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-music"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-music"
+                  aria-selected="false"
+                >
+                  <img src="{% static 'assets/img/icon/trending/guiter.png' %}" alt="" />Music
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-video-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-video"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-video"
+                  aria-selected="false"
+                >
+                  <img src="{% static 'assets/img/icon/trending/video.png' %}" alt="" />Video
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-sport-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-sport"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-sport"
+                  aria-selected="false"
+                >
+                  <img
+                    src="{% static 'assets/img/icon/trending/football.png' %}"
+                    alt=""
+                  />Sports
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-photo-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-photo"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-photo"
+                  aria-selected="false"
+                >
+                  <img
+                    src="{% static 'assets/img/icon/trending/camera.png' %}"
+                    alt=""
+                  />Photography
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-game-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-game"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-game"
+                  aria-selected="false"
+                >
+                  <img src="{% static 'assets/img/icon/trending/game.png' %}" alt="" />Game
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-2">
+          <div
+            class="nft__right d-flex justify-content-xl-end align-items-end mb-35"
+          >
+            <div class="nft__select">
+              <span class="sort-text">Filter & Sort</span>
+              <select>
+                <option>Recently added</option>
+                <option>Top Ranking</option>
+                <option>Price low to high</option>
+                <option>Price high to low</option>
+                <option>Top Viewed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="tab-content nft__tab" id="nfvtabcontent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-trending"
+              role="tabpanel"
+              aria-labelledby="nav-trending-tab"
+            >
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            14.2k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-17.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Meta Wolves Club</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.074 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>10 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-art"
+              role="tabpanel"
+              aria-labelledby="nav-art-tab"
+            >
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            8.3k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-9.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Chickolatev2</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.84 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>4 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-music"
+              role="tabpanel"
+              aria-labelledby="nav-music-tab"
+            >
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="product-details.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="product-details.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="product-details.html">
+                            <i class="icon_heart"></i>
+                            6.4k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-11.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html"
+                              >New Year Evangelist</a
+                            >
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.074 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>6 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-video"
+              role="tabpanel"
+              aria-labelledby="nav-video-tab"
+            >
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            4.1k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-7.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Beach Moon Escape</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>2.034 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>12 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-sport"
+              role="tabpanel"
+              aria-labelledby="nav-sport-tab"
+            >
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            8.3k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-9.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Chickolatev2</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.84 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>4 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-photo" role="tabpanel">
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            5.8k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-10.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Based Mafia</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.074 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>6 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-game" role="tabpanel">
+              <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6">
+                  <div class="bid__item mb-30 theme-bg-dark">
+                    <div class="bid__item-wrapper">
+                      <div
+                        class="bid__top d-flex align-items-center justify-content-between mb-20"
+                      >
+                        <div class="bid__user">
+                          <ul>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-1.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="profile.html">
+                                <img
+                                  src="{% static 'assets/img/bid/bid-user-2.jpg' %}"
+                                  alt=""
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="bid__popularity">
+                          <a href="profile.html">
+                            <i class="icon_heart"></i>
+                            14.2k
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bid__thumb m-img mb-15">
+                        <a href="product-details.html">
+                          <img src="{% static 'assets/img/bid/bid-img-5.jpg' %}" alt="" />
+                        </a>
+                      </div>
+                      <div class="bid__content">
+                        <div
+                          class="bid__content-top d-flex align-items-center justify-content-between"
+                        >
+                          <h3 class="bid__title">
+                            <a href="product-details.html">Meta Wolves Club</a>
+                          </h3>
+                          <div class="bid__trending-icon mb-15">
+                            <i class="fa-brands fa-ethereum"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="bid__info d-flex align-items-center justify-content-between"
+                        >
+                          <div class="bid__highest">
+                            <p>Heights bid <span>0.074 ETH</span></p>
+                          </div>
+                          <div class="bid__stock">
+                            <p>10 in stock</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bid__bottom d-flex align-items-center justify-content-between"
+                      >
+                        <div class="bid__btn-wrapper">
+                          <a
+                            href="product-details.html"
+                            class="bid__btn bid__btn-border"
+                            >Bid History</a
+                          >
+                        </div>
+                        <div class="bid__btn-wrapper">
+                          <button
+                            type="button"
+                            class="bid__btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bidmodal"
+                          >
+                            Place a bid
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="nft__more text-center mt-20">
+            <a href="shop.html" class="tp-load-more"
+              ><i class="fa-light fa-arrow-rotate-right"></i>View all items</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- nft area end -->
+
+  <!-- features area start -->
+  <section class="features__area pt-120 pb-70">
+    <div class="container tp-container">
+       <div class="row">
+          <div class="col-xxl-12">
+             <div class="section__title-wrapper text-center mb-60">
+                <h4 class="section__title-stroke center">Create and sell your NFTs</h4>
+                <h3 class="section__title">Create and sell your NFTs</h3>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-xxl-3 col-lg-4 col-md-6">
+             <div class="features__item mb-30 theme-bg-dark">
+                <div class="features__item-inner">
+                   <div class="features__icon">
+                      <img class="dark" src="{% static 'assets/img/icon/features/features-icon-1.png' %}" alt="">
+                      <img class="light" src="{% static 'assets/img/icon/features/features-icon-1-light.png' %}" alt="">
+                   </div>
+                   <div class="features__content">
+                      <h4 class="features__title">
+                         Grow your digital art Collection
+                      </h4>
+                      <p>Add new, trending and rare artwork to your collection.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6">
+             <div class="features__item mb-30 yellow-bg theme-bg-dark">
+                <div class="features__item-inner">
+                   <div class="features__icon">
+                      <img class="dark" src="{% static 'assets/img/icon/features/features-icon-2.png' %}" alt="">
+                      <img class="light" src="{% static 'assets/img/icon/features/features-icon-2-light.png' %}" alt="">
+                   </div>
+                   <div class="features__content">
+                      <h4 class="features__title">
+                         Earn money dy trading NFTs
+                      </h4>
+                      <p>Get paid by selling NFTs with secured payment methods.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6">
+             <div class="features__item mb-30 green-bg theme-bg-dark">
+                <div class="features__item-inner">
+                   <div class="features__icon">
+                      <img class="dark" src="{% static 'assets/img/icon/features/features-icon-3.png' %}" alt="">
+                      <img class="light" src="{% static 'assets/img/icon/features/features-icon-3-light.png' %}" alt="">
+                   </div>
+                   <div class="features__content">
+                      <h4 class="features__title">
+                        Discover <br> Top artists & Creators
+                      </h4>
+                      <p>Explore beautiful digital art by talented artists from around the world.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6">
+             <div class="features__item mb-30 pink-bg theme-bg-dark">
+                <div class="features__item-inner">
+                   <div class="features__icon">
+                      <img class="dark" src="{% static 'assets/img/icon/features/features-icon-4.png' %}" alt="">
+                      <img class="light" src="{% static 'assets/img/icon/features/features-icon-4-light.png' %}" alt="">
+                   </div>
+                   <div class="features__content">
+                      <h4 class="features__title">
+                         Buy and sell your <br> NFTs
+                      </h4>
+                      <p>Easily buy and sell your NFTs in the largest marketplace.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- features area end -->
+
+ <!-- cta area start -->
+ <section class="cta__area pt-45 pb-30">
+    <div class="container tp-container">
+       <div class="row gx-3">
+          <div class="col-xxl-5 col-xl-5">
+             <div class="subscribe__wrapper p-relative mr-40">
+                <div class="subscribe__inner theme-bg-dark p-relative ">
+                   <div class="subscribe__shape">
+                      <img class="subscribe__shape-1" src="{% static 'assets/img/cta/cta-shape-1.png' %}" alt="">
+                   </div>
+                   <h3>Get the latest Bitakon updates</h3>
+                   <form action="#">
+                      <div class="subscribe__input-wrapper p-relative">
+                         <div class="subscribe__input">
+                            <input type="email" placeholder="Your e-mail">
+                            <i class="fa-light fa-envelopes"></i>
+                         </div>
+                         <button class="subscribe__input-btn" type="button">Subscribe</button>
+                      </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-7 col-xl-7">
+             <div class="app__wrapper p-relative ">
+                <div class="app__inner theme-bg-dark p-relative ">
+                   <div class="app__content d-sm-flex align-items-center">
+                      <div class="app__qr mr-60">
+                         <a href="#">
+                            <img src="{% static 'assets/img/cta/qrcode.png' %}" alt="">
+                         </a>
+                      </div>
+                      <div class="app__info">
+                         <h3>Download the Bitakon app to Explore <br> Any NFTs</h3>
+
+                         <div class="app__download d-sm-flex align-items-center">
+                            <a href="#">
+                               <div class="app__download-item d-flex align-items-center transition-3">
+                                  <div class="app__download-icon mr-5">
+                                     <i class="fa-brands fa-google-play"></i>                                            
+                                  </div>
+                                  <div class="app__download-text">
+                                     <h5>Download from</h5>
+                                     <p>Google play</p>
+                                  </div>
+                               </div>
+                            </a>
+                            <a href="#">
+                               <div class="app__download-item active d-flex align-items-center transition-3">
+                                  <div class="app__download-icon mr-5">
+                                     <i class="fa-brands fa-android"></i>                                                                                       
+                                  </div>
+                                  <div class="app__download-text">
+                                     <h5>Download from</h5>
+                                     <p>Android</p>
+                                  </div>
+                               </div>
+                            </a>
+                            <a href="#">
+                               <div class="app__download-item d-flex align-items-center transition-3">
+                                  <div class="app__download-icon mr-5">
+                                     <i class="fa-brands fa-apple"></i>                                                                                      
+                                  </div>
+                                  <div class="app__download-text">
+                                     <h5>Download from</h5>
+                                     <p>App store</p>
+                                  </div>
+                               </div>
+                            </a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- cta area end -->
+
+ <!-- share modal start -->
+ <div class="share__modal modal fade" id="sharemodal" tabindex="-1" aria-labelledby="sharemodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="share__modal-content text-center">
+             <div class="share__nft-content">
+                <div class="share__thumb">
+                   <img src="assets/img/bid/bid-img-1.jpg" alt="">
+                </div>
+                
+             </div>
+             <div class="share__social">
+                <h3>Share this NFT</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- share modal end -->
+
+ <!-- bid popup area start -->
+         <div class="bid__modal modal fade" id="bidmodal" tabindex="-1" aria-labelledby="bidmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                  <div class="bid__modal-close">
+                     <button type="button" class="bid__modal-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
+                  </div>
+                  <div class="bid__modal">
+                     <h3 class="bid__modal-title">Place your bid</h3>
+                     <p>You are about to place bid on this product</p>
+
+                     <div class="bid__modal-form">
+                        <form action="#">
+                           <div class="bid__modal-input">
+                              <input type="text" placeholder="Enter your bid">
+                              <span class="bid__modal-price">ETH</span>
+                           </div>
+                           <div class="bid__modal-info">
+                              <p>Your Balance <span>254 ETH</span></p>
+                              <p>Service fee <span>10 ETH</span></p>
+                              <p>Total <span class="color-theme">264 ETH</span></p>
+                           </div>
+                           <div class="bid__modal-btn">
+                              <button type="submit" class="tp-btn-3">Place bid</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- bid popup area end -->
+
+</main>
 {% endblock content %}
