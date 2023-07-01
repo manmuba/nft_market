@@ -83,7 +83,7 @@ def activate(request, uidb64, token):
         return redirect('register')
     
 def edit_profile(request):
-    print(request.user.email)
+    user = Account.objects.get(email=request.user.email) 
     if request.method == 'POST':
         try:
             bg_image    = request.FILES['bg_image']
@@ -114,20 +114,44 @@ def edit_profile(request):
         user.first_name     = first_name
         user.last_name      = last_name
         user.email          = email
-        user.phone_number   = phone_number
-        user.gender         = gender
-        user.address        = address
-        user.city           = city
-        user.bio            = bio
-        user.country        = country
-        user.bg_image       = bg_image
-        user.image          = image
+        if phone_number:
+            user.phone_number   = phone_number
+        if gender:
+            user.gender         = gender
+        if address:
+            user.address        = address
+        if city:
+            user.city           = city
+        if bio:
+            user.bio            = bio
+        if country:
+            user.country        = country
+        if bg_image:
+            user.bg_image       = bg_image
+        if image:
+            user.image          = image
         user.save()
+        user = Account.objects.get(email=email) 
         try:
             old_password    = request.POST['old_password']
             new_password    = request.POST['new_password']
             confirm_password= request.POST['confirm_password']
+            if new_password == confirm_password:
+                success = user.check_password(old_password)
+                if success:
+                    user.set_password(new_password)
+                    user.save()
+                    messages.success(request, 'Password updated successfully.')
+                else:
+                    messages.error(request, 'Password Incorrect')
+            else:
+                messages.error(request, 'Password does not match!')
         except:
             None
-        
-    return render(request, 'auth/edit_profile.html')
+    
+    print(user.email)
+    context = {
+        'user': user
+    }
+    return render(request, 'auth/edit_profile.html', context)
+

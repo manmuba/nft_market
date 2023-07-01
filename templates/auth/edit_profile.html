@@ -16,7 +16,11 @@
                 <div class="col-xxl-12">
                    <div class="profile__cover-wrapper p-relative">
                       <div class="profile__cover w-img tp-img-cover">
+                         {% if user.bg_image %}
+                         <img src="{{user.bg_image.url}}" alt="" height="142px">
+                         {% else %}
                          <img src="{% static 'assets/img/creator/creator-bg-2.jpg' %}" alt="" height="142px">
+                         {% endif %}
                       </div>
                       <div class="profile__cover-edit">
                             <input id="profile-cover-input" name='bg_image' class="cover-img-popup" type="file">
@@ -29,7 +33,11 @@
                 <div class="col-xxl-12">
                    <div class="profile__thumb-wrapper  text-center">
                       <div class="profile__thumb text-center tp-img-profile d-inline-block p-relative">
+                         {% if user.image %}
+                         <img src="{{user.image.url}}" alt="">
+                         {% else %}
                          <img src="{% static 'assets/img/creator/user-1.jpg' %}" alt="">
+                         {% endif %}
                          <div class="profile__thumb-edit">
                             <input id="profile-thumb-input" name='profile_image' class="profile-img-popup" type="file">
                             <label for="profile-thumb-input"><i class="fa-regular fa-camera"></i></label>
@@ -57,14 +65,14 @@
                    <div class="tab-content" id="profile-tabContent">
                       <div class="tab-pane fade show active" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
                          <div class="profile__info">
-                            <h3 class="profile__info-title">Welcome Admin!</h3>
+                            <h3 class="profile__info-title">Welcome {{user.full_name}}!</h3>
                             <div class="profile__info-content">
                                   <div class="row">
                                      <div class="col-xxl-6 col-md-6">
                                         <div class="profile__input-box">
                                            <h4>First Name</h4>
                                            <div class="profile__input">
-                                              <input type="text" name='first_name' placeholder="Enter first name" value="Shahnewaz">
+                                              <input type="text" name='first_name' placeholder="Enter first name" value="{{user.first_name}}">
                                               <i class="fa-light fa-user"></i>
                                            </div>
                                         </div>
@@ -73,7 +81,7 @@
                                         <div class="profile__input-box">
                                            <h4>Last Name</h4>
                                            <div class="profile__input">
-                                              <input type="text" name='last_name' placeholder="Enter last name" value="Sakil">
+                                              <input type="text" name='last_name' placeholder="Enter last name" value="{{user.last_name}}">
                                               <i class="fa-light fa-user"></i>
                                            </div>
                                         </div>
@@ -82,7 +90,7 @@
                                         <div class="profile__input-box">
                                            <h4>Email</h4>
                                            <div class="profile__input">
-                                              <input type="email" name='email' placeholder="Enter your email" value="example@mail.com">
+                                              <input type="email" name='email' placeholder="Enter your email" value="{{user.email}}">
                                               <i class="fa-light fa-envelope"></i>
                                            </div>
                                         </div>
@@ -91,7 +99,7 @@
                                         <div class="profile__input-box">
                                            <h4>Phone</h4>
                                            <div class="profile__input">
-                                              <input type="text" name='phone' placeholder="Enter your number" value="0123 456 7889">
+                                              <input type="text" name='phone' placeholder="Enter your number" value="{% if user.phone_number %}{{user.phone_number}}{% endif %}">
                                               <i class="fa-light fa-phone"></i>
                                            </div>
                                         </div>
@@ -101,9 +109,8 @@
                                            <h4>Gender</h4>
                                            <div class="profile__input">
                                               <select name="gender">
-                                                 <option>Male</option>
-                                                 <option>Female</option>
-                                                 <option>Others</option>
+                                                 <option {% if user.gender == 'Male' %}selected{% endif %}>Male</option>
+                                                 <option {% if user.gender == 'Female' %}selected{% endif %}>Female</option>
                                               </select>
                                            </div>
                                         </div>
@@ -112,7 +119,7 @@
                                         <div class="profile__input-box">
                                            <h4>Address</h4>
                                            <div class="profile__input">
-                                              <input type="text" name="address" placeholder="Enter your address" value="3304 Randall Drive">
+                                              <input type="text" name="address" placeholder="Enter your address" value="{% if user.address %}{{user.address}}{% endif %}">
                                               <i class="fa-solid fa-location-dot"></i>
                                            </div>
                                         </div>
@@ -121,7 +128,7 @@
                                         <div class="profile__input-box">
                                            <h4>City</h4>
                                            <div class="profile__input">
-                                              <input type="text" name="city" placeholder="Enter your city" value="Honolulu">
+                                              <input type="text" name="city" placeholder="Enter your city" value="{% if user.city %}{{user.city}}{% endif %}">
                                               <i class="fa-light fa-city"></i>
                                            </div>
                                         </div>
@@ -131,10 +138,10 @@
                                            <h4>Country</h4>
                                            <div class="profile__input">
                                               <select name="country">
-                                                 <option>America</option>
-                                                 <option>Canada</option>
-                                                 <option>London</option>
-                                                 <option>China</option>
+                                                 <option {% if user.country == 'America' %}selected{% endif %}>America</option>
+                                                 <option {% if user.country == 'Canada' %}selected{% endif %}>Canada</option>
+                                                 <option {% if user.country == 'London' %}selected{% endif %}>London</option>
+                                                 <option {% if user.country == 'China' %}selected{% endif %}>China</option>
                                               </select>
                                            </div>
                                         </div>
@@ -143,7 +150,7 @@
                                         <div class="profile__input-box">
                                            <h4>Your Bio</h4>
                                            <div class="profile__input">
-                                              <textarea name="bio" placeholder="Enter your bio">Hi there, this is my bio...</textarea>
+                                              <textarea name="bio" placeholder="Enter your bio">{% if user.bio%}{{user.bio}}{% endif %}</textarea>
                                            </div>
                                         </div>
                                      </div>
