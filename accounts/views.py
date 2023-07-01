@@ -81,3 +81,53 @@ def activate(request, uidb64, token):
     else:
         messages.error(request, 'Invalid activation link')
         return redirect('register')
+    
+def edit_profile(request):
+    print(request.user.email)
+    if request.method == 'POST':
+        try:
+            bg_image    = request.FILES['bg_image']
+        except:
+            bg_image    = None
+        try:
+            image       = request.FILES['profile_image']
+        except:
+            image       = None
+        try:
+            phone_number= request.POST['phone']
+            gender      = request.POST['gender']
+            address     = request.POST['address']
+            city        = request.POST['city']
+            bio         = request.POST['bio']
+            country     = request.POST['country']
+        except:
+            phone_number= None
+            gender      = None
+            address     = None
+            city        = None
+            bio         = None
+            country     = None
+        first_name  = request.POST['first_name']
+        last_name   = request.POST['last_name']
+        email       = request.POST['email']
+        user = Account.objects.get(email=request.user.email)
+        user.first_name     = first_name
+        user.last_name      = last_name
+        user.email          = email
+        user.phone_number   = phone_number
+        user.gender         = gender
+        user.address        = address
+        user.city           = city
+        user.bio            = bio
+        user.country        = country
+        user.bg_image       = bg_image
+        user.image          = image
+        user.save()
+        try:
+            old_password    = request.POST['old_password']
+            new_password    = request.POST['new_password']
+            confirm_password= request.POST['confirm_password']
+        except:
+            None
+        
+    return render(request, 'auth/edit_profile.html')

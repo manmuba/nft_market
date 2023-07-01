@@ -52,6 +52,12 @@ class Account(AbstractBaseUser):
     username        = models.CharField(max_length=50, unique=True)
     email           = models.EmailField(max_length=100, unique=True)
     image           = models.ImageField(upload_to='UserProfile', blank=True, validators=[validate_image_extension])
+    bg_image        = models.ImageField(upload_to='UserBackground', blank=True, validators=[validate_image_extension])
+    gender          = models.CharField(max_length=50, blank=True)
+    address         = models.CharField(max_length=250, blank=True)
+    city            = models.CharField(max_length=150, blank=True)
+    country         = models.CharField(max_length=150, blank=True)
+    bio             = models.TextField(blank=True)
     phone_number    = models.CharField(max_length=50, blank=True)
 
     # required
